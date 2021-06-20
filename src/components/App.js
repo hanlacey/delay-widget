@@ -1,10 +1,14 @@
 import '../styles/App.css'
-import Table from './Table';
+import AllLines from './AllLines';
+import { Router } from '@reach/router'
 
 function App() {
   return (
     <div className="App">
-      <Table />
+      <Router>
+        <AllLines path="/" />
+      </Router>
+
     </div>
   );
 }
