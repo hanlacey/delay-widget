@@ -18,16 +18,3 @@ export const getAllStatuses = () => {
             return data
         })
 }
-
-
-export const getStatusDescription = (statusSeverity) => {
-    return request.get(`/Line/Meta/Severity`,
-        {
-            headers: {
-                'Authorization': `Basic ${token}`
-            }
-        })
-        .then(({ data }) => {
-            return data
-        })
-}
