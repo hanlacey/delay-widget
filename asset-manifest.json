@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/delay-widget/static/css/main.50cd3748.chunk.css",
+    "main.js": "/delay-widget/static/js/main.60c040a2.chunk.js",
+    "main.js.map": "/delay-widget/static/js/main.60c040a2.chunk.js.map",
+    "runtime-main.js": "/delay-widget/static/js/runtime-main.97b6159a.js",
+    "runtime-main.js.map": "/delay-widget/static/js/runtime-main.97b6159a.js.map",
+    "static/js/2.5213a6ea.chunk.js": "/delay-widget/static/js/2.5213a6ea.chunk.js",
+    "static/js/2.5213a6ea.chunk.js.map": "/delay-widget/static/js/2.5213a6ea.chunk.js.map",
+    "index.html": "/delay-widget/index.html",
+    "static/css/main.50cd3748.chunk.css.map": "/delay-widget/static/css/main.50cd3748.chunk.css.map",
+    "static/js/2.5213a6ea.chunk.js.LICENSE.txt": "/delay-widget/static/js/2.5213a6ea.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97b6159a.js",
+    "static/js/2.5213a6ea.chunk.js",
+    "static/css/main.50cd3748.chunk.css",
+    "static/js/main.60c040a2.chunk.js"
+  ]
+}
