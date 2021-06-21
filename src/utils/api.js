@@ -28,6 +28,7 @@ export const getStatusDescriptionById = (id) => {
         .then(({ data }) => {
             const description = data[0].lineStatuses[0].reason
             const { name } = data[0]
+
             return description ? description : `There are currently no reported disruptions on the ${name} line.`
         })
 }
