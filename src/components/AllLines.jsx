@@ -6,6 +6,7 @@ import "../styles/Widget.css";
 
 export default function AllLines() {
 	const [lineData, setLineData] = useState([]);
+	const [isDataReady, setIsDataReady] = useState(false);
 
 	function formatLineData(data) {
 		const formattedLineData = data.map((line) => {
@@ -22,6 +23,7 @@ export default function AllLines() {
 			.getAllStatuses()
 			.then((data) => {
 				formatLineData(data);
+				setIsDataReady(true);
 			})
 			.catch((err) => {
 				console.log(err);
@@ -30,7 +32,7 @@ export default function AllLines() {
 
 	return (
 		<div className="info-container">
-			<Table tableData={lineData} />
+			{!isDataReady ? <p>Loading...</p> : <Table tableData={lineData} />}
 		</div>
 	);
 }
