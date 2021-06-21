@@ -2,5 +2,5 @@
 
 A react widget that displays all statuses for London underground lines.
 
-Run the app on localhost:3000 by running `npm start` in your terminal.
+Install packages with `npm i` then run the app on localhost:3000 by entering `npm start` in your terminal.
 
