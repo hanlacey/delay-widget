@@ -1,5 +1,21 @@
+body {
+	background-color: #f6f6f6;
+}
+
 .App {
+	font-family: "Heebo", sans-serif;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-content: center;
+}
+
+.Header {
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bolder;
+	background-color: black;
+	color: white;
+	padding: 2rem;
 }

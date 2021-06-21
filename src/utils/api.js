@@ -6,7 +6,6 @@ const request = axios.create({
 })
 
 
-
 export const getAllStatuses = () => {
     return request.get(`/Line/Mode/tube/Status`,
         {
@@ -16,5 +15,19 @@ export const getAllStatuses = () => {
         })
         .then(({ data }) => {
             return data
+        })
+}
+
+export const getStatusDescriptionById = (id) => {
+    return request.get(`/Line/${id}/Status`,
+        {
+            headers: {
+                'Authorization': `Basic ${token}`
+            }
+        })
+        .then(({ data }) => {
+            const description = data[0].lineStatuses[0].reason
+            const { name } = data[0]
+            return description ? description : `There are currently no reported disruptions on the ${name} line.`
         })
 }
