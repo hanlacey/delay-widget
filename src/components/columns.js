@@ -8,7 +8,7 @@ export const COLUMNS = [
         accessor: "status"
     },
     {
-        header: "",
-        accessor: "description"
+        header: "More info",
+        accessor: "link"
     }
 ]
